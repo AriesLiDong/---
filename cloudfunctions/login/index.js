@@ -5,7 +5,7 @@ const cloud = require('wx-server-sdk')
 
 // 初始化 cloud
 cloud.init({
-  env: 'weiqijule-3b8fa7'
+  env: '云开发环境ID'
 })
 
 /**
