@@ -1,0 +1,26 @@
+<view class="page">
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">用户名</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" bindinput="getUsernameInput" placeholder="请输入用户名"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">密码</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" bindinput="getPasswordInput" placeholder="请输入密码"/>
+            </view>
+            <view wx:if="{{haspwd}}" class="weui-cell__ft">
+                <icon type="warn" size="23" color="#E64340"></icon>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="doSubmit">确定</button>
+        </view>
+    </view>
+</view>
